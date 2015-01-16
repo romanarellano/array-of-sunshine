@@ -9,11 +9,11 @@ function reverseString(str) {//"word"
     var arr= str.match(/[a-zA-Z ]/g);//["w","o","r","d"]
     
 
-   var revStr =  arr.reverse(function(x,y){
-        return  x[x.length]+y[x.length-1];
+  var string= arr.reduce(function(x,y){
+        return  y+x;
     });
 
-    return revStr.join("");
+    return string;
   
 }
 
