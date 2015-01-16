@@ -42,16 +42,16 @@ var condense= string.substring(0,string.length-1);
   Note: For now, do not worry about words like "chicken".
   Instead of "ickenchay", it should just become "hickencay".
 */
-// function speakPigLatin(strArray) {
+function speakPigLatin(strArray) {
 
-// var array=[];
+var array=[];
 
-// var changedStr=strArray.map(function(x){    
-// return x.substring(1,x.length).concat(x[0]).concat("ay");
-// });
+var changedStr=strArray.map(function(x){    
+return x.substring(1,x.length).concat(x[0]).concat("ay");
+});
 
 
-// return changedStr;
-// }
+return changedStr;
+}
 
 
