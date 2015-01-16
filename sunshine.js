@@ -13,7 +13,7 @@ function reverseString(str) {//"word"
 
     }
 
-return revStr;
+    return revStr;
   
 }
 
@@ -27,11 +27,12 @@ return revStr;
 */
 function spliceString(str, char) {
       var arr= str.split("");
-     arr.splice(0,0,arr[arr.length-1]);
-     arr.splice(-2,0,char); 
-  var string=arr.join("");
-var condense= string.substring(0,string.length-1);
-  return condense;
+    arr.splice(0,0,arr[arr.length-1]);
+    arr.splice(-2,0,char); 
+  
+      var string=arr.join("");
+      var condense= string.substring(0,string.length-1);
+    return condense;
 
 }
 
@@ -47,11 +48,11 @@ function speakPigLatin(strArray) {
 var array=[];
 
 var changedStr=strArray.map(function(x){    
-return x.substring(1,x.length).concat(x[0]).concat("ay");
+  return x.substring(1,x.length).concat(x[0]).concat("ay");
 });
 
 
-return changedStr;
+  return changedStr;
 }
 
 
