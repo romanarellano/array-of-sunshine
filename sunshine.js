@@ -4,16 +4,16 @@
   reverses the array and returns the reversed string of the original.
   Bonus: Use RegEx to create the array
 */
+
 function reverseString(str) {//"word"
     var arr= str.match(/[a-zA-Z ]/g);//["w","o","r","d"]
-    var revStr="";
+    
 
-    for(i=arr.length-1;i>=0;i--){
-          revStr+=arr[i];
+   var revStr =  arr.reverse(function(x,y){
+        return  x[x.length]+y[x.length-1];
+    });
 
-    }
-
-    return revStr;
+    return revStr.join("");
   
 }
 
